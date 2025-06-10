@@ -2,39 +2,349 @@
 <html>
 
 <head>
-  <title>My Site</title>
+  <title>KhanhLe's Site</title>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-  <style>
-    body,
-    h1 {
-      font-family: "Raleway", sans-serif
-    }
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="title" content="KhanhLe's Site">
+  <meta name="description" content="Hi, my name is Khanh Le. I'm the Web Developer.">
+  <meta name="keywords" content="web, fullstack developer">
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="language" content="English">
+  <meta name="author" content="Khanh Bao Le">
+  <meta property="og:title" content="KhanhLe's Site" />
+  <meta property="og:url" content="/" />
+  <meta property="og:image" content="/imgs/lab4.avif" />
 
-    body,
-    html {
-      height: 100%
-    }
+  <meta name="twitter:title" content="KhanhLe's Site">
+  <meta name="twitter:description" content="Hi, my name is Khanh Le. I'm the Web Developer.">
+  <meta name="twitter:image" content="/imgs/lab4.avif">
+  <meta name="twitter:card" content="KhanhLe's Site">
 
-    .bgimg {
-      background-image: url('https://images.unsplash.com/photo-1515256722043-0f2b082ddadc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80');
-      min-height: 100%;
-      background-position: center;
-      background-size: cover;
-    }
-  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
-<body>
-  <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-    <div class="w3-display-topleft w3-padding-large w3-xlarge">
-      Logo
+<body class="pt-16">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-lg fixed w-full z-20 top-0">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="#" class="flex items-center py-5 px-2 text-gray-700 hover:text-gray-900">
+                        <span class="font-bold text-xl">Khanh Le</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="#about-me" class="py-5 px-3 text-gray-700 hover:text-gray-900">About Me</a>
+                    <a href="#certifications" class="py-5 px-3 text-gray-700 hover:text-gray-900">Certifications</a>
+                    <a href="#projects" class="py-5 px-3 text-gray-700 hover:text-gray-900">Projects</a>
+                    <a href="#contact" class="py-5 px-3 text-gray-700 hover:text-gray-900">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="mobile-menu-button">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="mobile-menu hidden md:hidden">
+            <a href="#about-me" class="block py-2 px-4 text-sm hover:bg-gray-200">About Me</a>
+            <a href="#certifications" class="block py-2 px-4 text-sm hover:bg-gray-200">Certifications</a>
+            <a href="#projects" class="block py-2 px-4 text-sm hover:bg-gray-200">Projects</a>
+            <a href="#contact" class="block py-2 px-4 text-sm hover:bg-gray-200">Contact</a>
+        </div>
+    </nav>
+    <!-- banner -->
+    <section
+    class="min-h-screen w-full flex flex-col justify-center items-center bg-[url('/imgs/lab4.avif')] bg-cover bg-center">
+    <div class="w-full lg:w-[80%] p-12 text-gray-800">
+      <h1 class="text-6xl font-bold mb-10 grid grid-col-1 lg:gap-5">
+        <span class="banner-text">Hi, my name is <span class="text-amber-400">Khanh Bao Le</span></span>
+        <span class="text-gray-800 banner-text">I'm the Web Developer.</span>
+      </h1>
+
+      <a href="#about-me" class="banner-cta uppercase border-2 border-amber-400 p-3 hover:bg-amber-400 hover:text-white transition-colors cursor-pointer">
+        <span class="text-xl pl-8 pr-8 pt-3 pb-3 font-light focus:outline-none focus:ring focus:ring-amber-300">Know more</span>
+      </a>
     </div>
-    <div class="w3-display-middle">
-      <h1 class="w3-jumbo w3-animate-top">COMING SOON</h1>
+  </section>
+  <!-- banner ./ -->
+
+ <!-- about me -->
+  <!-- Main Section 2: Resume -->
+  <main class="max-w-6xl mx-auto mt-10 px-4">
+    <div class="flex flex-col lg:flex-row gap-12">
+        <div class="lg:w-2/3 relative">
+            <section class="mb-6 relative z-10" data-aos="fade-down">
+                <h2 class="text-4xl md:text-5xl font-display font-bold mb-3">About Me</h2>
+                <h3 class="text-xl md:text-2xl text-amber-600 font-medium">Get to know me better</h3>
+            </section>
+
+            <section class="mb-10 relative z-10" data-aos="fade-right">
+                <div class="flex flex-col md:flex-row gap-8 items-center">
+                    <div class="md:w-1/2">
+                        <img class="object-cover w-full h-auto rounded-lg shadow-lg" src="imgs/myself.jpg" title="My avatar" alt="My avatar" />
+                    </div>
+                    <div class="md:w-1/2">
+                        <p class="text-lg leading-relaxed mb-8">
+                            I am <span class="font-bold">Bao Khanh</span>, and I am currently a second-year Computer Science
+                            and Engineering student at VNUK. My academic journey has equipped me with a strong foundation in
+                            programming and problem-solving, and I am especially interested in web development and AI, where
+                            I hope to create impactful, user-centered digital solutions.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-10" data-aos="fade-up">
+                <h4 class="text-2xl font-bold mb-6 text-amber-600 font-display">Education</h4>
+                <div class="border-l-4 border-amber-600 pl-6 space-y-6">
+                    <div class="relative pl-6">
+                        <span class="absolute left-0 top-1.5">
+                            <svg class="w-4 h-4 text-[#ff6d4d]" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2L22 12L12 22L2 12L12 2Z" />
+                            </svg>
+                        </span>
+                        <div class="grid grid-cols-[auto,1fr] gap-x-6">
+                            <p class="text-xl font-bold">2023–2028</p>
+                            <div>
+                                <p class="text-lg font-semibold">Computer Science & Engineering</p>
+                                <p class="text-sm text-stone-700">VNUK University</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="flex space-x-6 mt-8 relative z-10" data-aos="zoom-in">
+                <a href="#projects"
+                    class="px-6 py-2 bg-amber-600 text-white font-bold rounded-full hover:bg-amber-700 transition-colors transform hover:scale-105">
+                    My projects ↓
+                </a>
+            </section>
+        </div>
+
+        <!-- Right Column: Skills -->
+        <div class="lg:w-1/3 lg:pt-20">
+            <div class="bg-white p-6 rounded-lg border border-stone-200 shadow-lg sticky top-8">
+                <h4 class="text-2xl font-bold mb-6 text-amber-600 font-display">Skills</h4>
+                <div class="space-y-6">
+                    <div>
+                        <h5 class="font-bold mb-2">Web Development</h5>
+                        <p class="text-stone-600">HTML, CSS, JavaScript</p>
+                    </div>
+                    <div>
+                        <h5 class="font-bold mb-2">Programming</h5>
+                        <p class="text-stone-600">Java, C++, Python</p>
+                    </div>
+                    <div>
+                        <h5 class="font-bold mb-2">Design Tools</h5>
+                        <p class="text-stone-600">Figma, Adobe Creative Suite</p>
+                    </div>
+                    <div>
+                        <h5 class="font-bold mb-2">Languages</h5>
+                        <p class="text-stone-600">Vietnamese (Native), English (Fluent)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+</main>
+  <!-- about me ./ -->
+    <!-- Certifications -->
+    <section id="certifications"
+        class="py-20 px-6 relative z-10 max-w-6xl mx-auto mt-10 parallax"
+        style="background-image: url('https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');">
+        <div class="backdrop-blur-sm bg-white/80 p-10 rounded-xl shadow-lg">
+            <h1 class="text-4xl font-bold mb-2 text-stone-900 section-title text-center" data-aos="fade-down">Certifications</h1>
+            <h2 class="text-xl text-stone-500 mb-12 text-center" data-aos="fade-down" data-aos-delay="100">My professional
+                achievements</h2>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Certification 1 -->
+                <div class="card-flip h-60 w-full" data-aos="zoom-in">
+                    <div class="card-inner w-full h-full">
+                        <div
+                            class="card-front bg-stone-50 p-5 rounded-lg border border-stone-200 shadow-md border-l-4 border-amber-500 flex flex-col justify-between items-start">
+                            <div>
+                                <h4 class="font-bold text-stone-900 text-lg mb-1">Next.js Pages Router Fundamentals</h4>
+                                <p class="text-sm text-stone-500">May 2025 - Vercel</p>
+                            </div>
+                            <p class="text-sm mt-4 text-stone-700">
+                                Credential ID pages-router
+                            </p>
+                        </div>
+                        <div class="card-back bg-amber-600 text-white p-5 rounded-lg flex items-center justify-center">
+                            <div class="text-center">
+                                <i class="fas fa-award text-5xl mb-3"></i>
+                                <p class="text-xl font-semibold">Vercel</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certification 2 -->
+                <div class="card-flip h-60 w-full" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="card-inner w-full h-full">
+                        <div
+                            class="card-front bg-stone-50 p-5 rounded-lg border border-stone-200 shadow-md border-l-4 border-amber-500 flex flex-col justify-between items-start">
+                            <div>
+                                <h4 class="font-bold text-stone-900 text-lg mb-1">React Foundations for Next.js</h4>
+                                <p class="text-sm text-stone-500">May 2025 – Vercel</p>
+                            </div>
+                            <p class="text-sm mt-4 text-stone-700">
+                                Credential ID react-foundations
+                            </p>
+                        </div>
+                        <div class="card-back bg-amber-600 text-white p-5 rounded-lg flex items-center justify-center">
+                            <div class="text-center">
+                                <i class="fas fa-medal text-5xl mb-3"></i>
+                                <p class="text-xl font-semibold">Vercel</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </section>
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-6 max-w-6xl mx-auto">
+      <h1 class="text-4xl font-bold mb-2 text-stone-900 section-title text-center" data-aos="fade-right">My Projects</h1>
+      <h2 class="text-xl text-stone-500 mb-12 text-center" data-aos="fade-right" data-aos-delay="100">Selected works and case
+          studies</h2>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Project 1 -->
+          <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow transform hover:-translate-y-1"
+              data-aos="fade-up">
+              <div class="h-48 bg-amber-100 rounded-md mb-4 overflow-hidden">
+                  <img src="imgs/project.png" alt="Project 1"
+                      class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+              </div>
+              <h3 class="text-xl font-bold mb-2 text-stone-900">E-commerce Platform</h3>
+              <p class="text-stone-600 text-sm mb-4">Full-featured online coffee shopping experience with React and Node.js
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">React</span>
+                  <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Node.js</span>
+                  <span class="bg-red-100 text-red-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">MongoDB</span>
+              </div>
+              <a href="#" class="text-amber-600 font-medium hover:text-amber-700 flex items-center group">
+                  View Project
+                  <i class="fas fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform"></i>
+              </a>
+          </div>
+      </div>
+  </section>
+ <!-- Contact Section -->
+ <section id="contact" class="py-20 px-6 bg-stone-100">
+  <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden p-8 hover-zoom" data-aos="zoom-in">
+      <h1 class="text-4xl font-bold mb-2 text-stone-900 section-title text-center">Get In Touch</h1>
+      <h2 class="text-xl text-stone-500 mb-8 text-center">Let's work together</h2>
+
+      <form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div data-aos="fade-right">
+              <label for="name" class="block text-sm font-medium text-stone-700 mb-1">Name</label>
+              <input type="text" id="name"
+                  class="w-full px-4 py-2 border border-stone-300 rounded-md focus:ring-amber-500 focus:border-amber-500 transition-all duration-300 focus:ring-2 placeholder-stone-400"
+                  placeholder="Your Name">
+          </div>
+          <div data-aos="fade-left">
+              <label for="email" class="block text-sm font-medium text-stone-700 mb-1">Email</label>
+              <input type="email" id="email"
+                  class="w-full px-4 py-2 border border-stone-300 rounded-md focus:ring-amber-500 focus:border-amber-500 transition-all duration-300 focus:ring-2 placeholder-stone-400"
+                  placeholder="Your Email">
+          </div>
+          <div class="md:col-span-2" data-aos="fade-up" data-aos-delay="100">
+              <label for="message" class="block text-sm font-medium text-stone-700 mb-1">Message</label>
+              <textarea id="message" rows="4"
+                  class="w-full px-4 py-2 border border-stone-300 rounded-md focus:ring-amber-500 focus:border-amber-500 transition-all duration-300 focus:ring-2 placeholder-stone-400"
+                  placeholder="Your Message"></textarea>
+          </div>
+          <div class="md:col-span-2 flex justify-center" data-aos="zoom-in">
+              <button type="submit"
+                  class="bg-amber-600 text-white px-8 py-3 rounded-md font-semibold hover:bg-amber-700 transition-colors transform hover:scale-105 shadow-md hover:shadow-lg">
+                  Send Message
+              </button>
+          </div>
+      </form>
   </div>
+</section>
+<!-- footer -->
+<footer class="bg-gray-900 text-white py-12 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-start gap-12">
+                <div data-aos="fade-right">
+                    <h3 class="text-2xl font-bold mb-4 tracking-wide">Khanh Le</h3>
+                    <p class="text-gray-400 max-w-md mb-6">
+                        Graphic Designer and Web Developer specializing in creative digital solutions and user-centered
+                        design.
+                    </p>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="https://www.linkedin.com/in/khanh-l%C3%AA-1a39a12a4/" target="_blank"
+                            rel="noopener noreferrer"
+                            class="text-gray-400 hover:text-blue-400 transition footer-link social-icon text-2xl">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://facebook.com/yourprofile" target="_blank" rel="noopener noreferrer"
+                            class="text-gray-400 hover:text-blue-300 transition footer-link social-icon text-2xl">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://instagram.com/yourprofile" target="_blank" rel="noopener noreferrer"
+                            class="text-gray-400 hover:text-pink-500 transition footer-link social-icon text-2xl">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://github.com/yourprofile" target="_blank" rel="noopener noreferrer"
+                            class="text-gray-400 hover:text-gray-200 transition footer-link social-icon text-2xl">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="text-lg font-semibold mb-4 tracking-wide">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#about-me" class="text-gray-400 hover:text-white transition footer-link">About me</a></li>
+                        <li><a href="#certifications" class="text-gray-400 hover:text-white transition footer-link">Certifications</a></li>
+                        <li><a href="#projects"
+                                class="text-gray-400 hover:text-white transition footer-link">Projects</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition footer-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div data-aos="fade-left" data-aos-delay="200">
+                    <h3 class="text-lg font-semibold mb-4 tracking-wide">Contact Info</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope text-gray-400 mr-2"></i>
+                            <a href="mailto:khanhlee2602@gmail.com"
+                                class="text-gray-400 hover:text-white transition footer-link">
+                                khanhlee2602@gmail.com
+                            </a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-gray-400 mr-2"></i>
+                            <span class="text-gray-400">Da Nang, Vietnam</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt text-gray-400 mr-2"></i>
+                            <span class="text-gray-400">+84 123 456 789</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center" data-aos="fade-up">
+                <p class="text-gray-500 text-sm">© 2025 Khanh Le. All rights reserved.</p>
+                <p class="mt-2 text-xs text-gray-600">Built with passion and Tailwind CSS</p>
+            </div>
+        </div>
+    </footer>
+  <!-- footer ./ -->
+
+  
+  <script type="module" src="/src/scripts/application.js"></script>
 </body>
 </html>
